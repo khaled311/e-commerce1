@@ -21,7 +21,7 @@ const HeroBanner = ({ BannerData }: Props) => {
         <img src={imageUrl.url()} alt="" className="hero-banner-image" />
 
         <div>
-          <Link href={`/products/${BannerData?.product}`}>
+          <Link href={`/product/${BannerData?.product}`}>
             <button type="button">{BannerData?.buttonText}</button>
           </Link>
           <div className="desc">
