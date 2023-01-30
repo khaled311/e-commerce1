@@ -3,7 +3,19 @@ import { urlFor } from "lib/client";
 import Link from "next/link";
 import React from "react";
 
-type Props = {};
+type Props = {
+  footerBanner: {
+    discount: string;
+    largeText1: string;
+    largeText2: string;
+    saleTime: string;
+    smallText: string;
+    midText: string;
+    product: string;
+    buttonText: string;
+    image: string;
+  };
+};
 
 const FooterBanner = ({
   footerBanner: {
