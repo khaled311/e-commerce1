@@ -751,3 +751,7 @@ span.text-red {
 .pointer {
   cursor: pointer;
 }
+
+footer {
+  margin-block-start: 100px;
+}

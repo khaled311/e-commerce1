@@ -3,6 +3,7 @@ import Head from "next/head";
 import { client } from "lib/client";
 
 export default function Home({ products, BannerData }: any) {
+  console.log("BannerData", BannerData);
   return (
     <>
       <Head>
@@ -12,7 +13,7 @@ export default function Home({ products, BannerData }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <HeroBanner BannerData={BannerData?.length && BannerData[0]} />
+        <HeroBanner BannerData={BannerData?.length && BannerData[1]} />
 
         <div className="products-heading">
           <h2>Best seller products</h2>
@@ -25,7 +26,7 @@ export default function Home({ products, BannerData }: any) {
           ))}
         </div>
 
-        <FooterBanner footerBanner={BannerData && BannerData[1]} />
+        <FooterBanner footerBanner={BannerData && BannerData[0]} />
       </main>
     </>
   );
