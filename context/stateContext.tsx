@@ -19,7 +19,7 @@ export const ourState: IOurState = {
   qty: 0,
 };
 
-export const StateContext = ({ children }: Element) => {
+export const StateContext = ({ children }: any) => {
   const [state, setState] = useState(ourState);
 
   const addToCart = (product: any, quantity: any) => {
